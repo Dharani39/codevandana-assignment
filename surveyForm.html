@@ -1,0 +1,61 @@
+html
+
+<form id="surveyForm">
+
+<label for="firstName">First Name:</label> <input type="text" id="firstName" required>
+
+<label for="lastName">Last Name:</label> <input type="text" id="lastName" required>
+
+<label for="dob">Date of Birth: </label> <input type="date" id="dob" required>
+
+<label for="country">Country: </label> <select id="country" required> <option value="">Select a country</option> <!-- Add options for different countries -->
+
+</select>
+
+<label for="gender">Gender:</label> <input type="checkbox" id="genderMale" name="gender" value="Male"> <label for="genderMale">Male</label>
+
+<input type="checkbox" id="genderFemale" name="gender" value="Female"> <label for="genderFemale">Female</label>
+
+<input type="checkbox" id="genderOther" name="gender" value="Other"> <label for="genderOther">Other</label>
+
+<label for="profession">Profession:</label
+<label for="email">Email:</label> <input type="email" id="email" required>
+
+<label for="mobile">Mobile Number:</
+
+label> <input type="tel" id="mobile" required>
+
+<button type="submit">Submit</button> <button type="reset">Reset</button>
+
+</form>
+
+<script>
+
+document.getElementById("surveyForm").addE ventListener("submit", function(event) { event.preventDefault(); // Prevent form submission
+
+// Get form values var firstName =
+
+document.getElementById("firstName").value;
+
+var lastName = document.getElementById("lastName").value;
+
+var dob =
+
+document.getElementById("dob").value;
+
+var country =
+
+document.getElementById("country").value;
+
+var gender =
+
+document.querySelector('input[name="gender"]:checked");
+
+var profession =
+
+document.getElementById("profession").value;
+
+var email=
+document.getElementById("email").value;
+var mobile=
+document.getElementById("mobile").value;
